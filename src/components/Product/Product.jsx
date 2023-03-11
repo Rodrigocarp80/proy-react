@@ -1,10 +1,10 @@
-
+import { Link } from "react-router-dom";
 
 const Product = ({prod}) => {
     return (
         
         <div className="card cardProducto" style={{width: '18rem'}}>
-            <img src={prod.img} className="card-img-top imgcard" alt="..." />
+            <img src={prod.img} className="card-img-top img-card" alt="..." />
             <div className="card-body">
             <h5 className="card-title">{prod.marca} {prod.modelo}</h5>
             <p className="card-text">Tipo: {prod.tipo}</p>
@@ -18,7 +18,7 @@ const Product = ({prod}) => {
             <p className="card-text">Carroceria: {prod.carroceria}</p>
             <p className="card-text">Km: {prod.km}</p>
             <p className="card-text">Precio: ${prod.precio}</p>
-            <button className="btn btn-dark">Ver Producto</button>
+            <button className="btn btn-dark"><Link to={`/producto/${prod.id}`} >Ver Producto</Link></button>
             
             </div>
         </div>
