@@ -4,17 +4,19 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { CarritoProvider } from './context/CarritoContext';
 
 import Navbar from './Navbar/Navbar';
-import Contador from './Contador/Contador';
+
 import ProductListContainer from './ProductListContainer/ProductListContainer';
 import Contacto from './Contacto/Contacto';
 import ProductDetailContainer from './ProductDetailContainer/ProductDetailContainer';
 import Carrito from './Carrito/Carrito';
+import Carousel from './Carousel/Carousel';
 
 function App() {
     return (
         <>
         <CarritoProvider>
             <BrowserRouter>
+                <Carousel/>
                 <Navbar />
                 <Routes>
                     <Route path='/' element={<ProductListContainer/>} />
