@@ -1,6 +1,13 @@
-
+import Contador from "../Contador/Contador";
+import { useCarritoContext } from "../context/CarritoContext";
 
 const ProductDetail = ({item}) => {
+    const {addProduct} =useCarritoContext
+
+    const onAdd = (contador) => {
+        addProduct(item, contador)
+}
+
     return (
         <div className="row g-0">
             <div className="col-md-4 imgBody">
@@ -19,7 +26,8 @@ const ProductDetail = ({item}) => {
                     <p className="card-text">Motor: {item.motor}</p>
                     <p className="card-text">Carroceria: {item.carroceria}</p>
                     <p className="card-text">Km: {item.km}</p>
-                    <p className="card-text">Precio: ${item.precio}</p>
+                    <p className="card-text">Precio: ${new Intl.NumberFormat("de-DE").format(item.precio)}</p>
+                    <Contador stock={item.stock} onAdd={onAdd}/>
                 </div>
             </div>
             
@@ -29,3 +37,4 @@ const ProductDetail = ({item}) => {
 }
 
 export default ProductDetail;
+

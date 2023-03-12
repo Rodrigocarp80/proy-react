@@ -17,7 +17,7 @@ const Product = ({prod}) => {
             <p className="card-text">Motor: {prod.motor}</p>
             <p className="card-text">Carroceria: {prod.carroceria}</p>
             <p className="card-text">Km: {prod.km}</p>
-            <p className="card-text">Precio: ${prod.precio}</p>
+            <p className="card-text">Precio: ${new Intl.NumberFormat("de-DE").format(prod.precio)}</p>
             <button className="btn btn-dark"><Link to={`/producto/${prod.id}`} >Ver Producto</Link></button>
             
             </div>
