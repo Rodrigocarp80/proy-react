@@ -8,3 +8,14 @@
     width: 19rem;
     margin: 4px;
 }
+.slide{
+    margin: 10px;
+   
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+.slide img{
+    height: 60vh;
+    
+}
