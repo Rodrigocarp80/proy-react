@@ -1,6 +1,6 @@
 import React from 'react';
 import Secciones from './Secciones/Secciones';
-import Carrito from './Carrito/Carrito';
+import BotonCarrito from './BotonCarrito/BotonCarrito';
 
 const Navbar = () => {
     return (
@@ -12,7 +12,7 @@ const Navbar = () => {
                          </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <Secciones/>  
-                        <Carrito/>          
+                        <BotonCarrito/>          
                     </div>
                 </div>
             </nav>

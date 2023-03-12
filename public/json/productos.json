@@ -15,6 +15,7 @@
         "carroceria":"Pick-up" ,
         "km":4500,
         "precio": 8900000,
+        "stock": 1,
         "img": "https://firebasestorage.googleapis.com/v0/b/numen-react.appspot.com/o/toro.jpg?alt=media&token=0669552e-5076-4c45-a7aa-af55d34d7286"
     
     },
@@ -34,6 +35,7 @@
         "carroceria":"Pick-up" ,
         "km":0,
         "precio":18000000,
+        "stock": 5,
         "img": "https://firebasestorage.googleapis.com/v0/b/numen-react.appspot.com/o/amarok.jpg?alt=media&token=dd1686dc-a31d-49d0-b485-a0a2c58e0176"
     
     },
@@ -53,6 +55,7 @@
         "carroceria":"Hatchback" ,
         "km":124000,
         "precio":3000000,
+        "stock": 1,
         "img": "https://firebasestorage.googleapis.com/v0/b/numen-react.appspot.com/o/bravo.jpg?alt=media&token=932db9b5-e931-4d8e-8717-371cfb2133de"
     },
     {
@@ -71,6 +74,7 @@
         "carroceria":"SUV" ,
         "km":0,
         "precio":9000000,
+        "stock": 8,
         "img": "https://firebasestorage.googleapis.com/v0/b/numen-react.appspot.com/o/corolla-cross.jpg?alt=media&token=3dc1e8ab-7e3e-4dfd-8bb0-0e760bc9a676"
     
     },
@@ -90,6 +94,7 @@
         "carroceria":"Monovolumen" ,
         "km":0,
         "precio": 13000000,
+        "stock": 5,
         "img": "https://firebasestorage.googleapis.com/v0/b/numen-react.appspot.com/o/suv-peugeot-5008.jpg?alt=media&token=067456ad-3f77-4ca0-9543-97c21be3812d"
     
     },
@@ -109,6 +114,7 @@
         "carroceria":"Sedán" ,        
         "km":57800,
         "precio": 3200000,
+        "stock": 1,
         "img": "https://firebasestorage.googleapis.com/v0/b/numen-react.appspot.com/o/voyage.jpg?alt=media&token=f9dd054b-e1f7-48b9-bdf1-702482a410be"
     
     },
@@ -128,6 +134,7 @@
         "carroceria":"Sedán" ,
         "km":78000,
         "precio":4850000,
+        "stock": 1,
         "img": "https://firebasestorage.googleapis.com/v0/b/numen-react.appspot.com/o/corolla.jpg?alt=media&token=3b7cece8-6c4c-4824-a8a4-547a86826465"
     },
     {
@@ -146,6 +153,7 @@
         "carroceria":"Hatchback" ,
         "km":0,
         "precio": 6500000,
+        "stock": 3,
         "img":"https://firebasestorage.googleapis.com/v0/b/numen-react.appspot.com/o/cruze.jpg?alt=media&token=81c5f68c-ce0d-4940-be20-fefbf03ae08b" 
     
     },
@@ -165,6 +173,7 @@
         "carroceria":"Sedán" ,
         "km":0,
         "precio":5720000,
+        "stock": 7,
         "img":"https://firebasestorage.googleapis.com/v0/b/numen-react.appspot.com/o/cronos.jpg?alt=media&token=35cf9bac-0288-4a86-ae5c-861ea8fad525"
     },
     {
@@ -183,6 +192,7 @@
         "carroceria":"Furgon" ,
         "km":0,
         "precio":5510000,
+        "stock": 5,
         "img": "https://firebasestorage.googleapis.com/v0/b/numen-react.appspot.com/o/kangoo.jpg?alt=media&token=6fa043da-c966-432d-bb89-6a5c4f3eae99"
     
     }
