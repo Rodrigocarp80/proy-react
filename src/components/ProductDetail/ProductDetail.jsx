@@ -1,8 +1,8 @@
 import Contador from "../Contador/Contador";
-import { useCarritoContext } from "../context/CarritoContext";
+import { useCarritoContext } from "../../context/CarritoContext";
 
 const ProductDetail = ({item}) => {
-    const {addProduct} =useCarritoContext
+    const {addProduct} =useCarritoContext()
 
     const onAdd = (contador) => {
         addProduct(item, contador)

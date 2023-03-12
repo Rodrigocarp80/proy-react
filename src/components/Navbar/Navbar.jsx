@@ -1,5 +1,5 @@
 import Secciones from "./Secciones/Secciones";
-import Buscador from "./Buscador/Buscador";
+
 import BotonCarrito from "./BotonCarrito/BotonCarrito";
 const Navbar = () => {
     return (
@@ -18,7 +18,7 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <Secciones />
-                    <Buscador/>&nbsp;
+                 
                     <BotonCarrito/>
                 </div>
             </div>

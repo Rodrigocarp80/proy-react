@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
-import { useCarritoContext } from "../context/CarritoContext";
+import { useCarritoContext } from "../../context/CarritoContext";
 const Carrito = () => {
-    const {carrito, emptyCart, totalPrice, removeItem} = useCarritoContext
+    const {carrito, emptyCart, totalPrice, removeItem} = useCarritoContext()
+   
     return (
         <>
+        
         {carrito.lenght === 0 
         ? 
         <>
@@ -22,16 +24,16 @@ const Carrito = () => {
                         <p className="card-text">Cantidad: {prod.cant}</p>
                         <p className="card-text">Precio unitario: ${new Intl.NumberFormat("de-DE").format(prod.precio)}</p>
                         <p className="card-text">Subtotal: ${new Intl.NumberFormat("de-DE").format(prod.precio * prod.cant)}</p>
-                        <button className="btn btn-danger" onClick={() => removeItem(prod.id)}></button>
+                        <button className="btn btn-danger" onClick={() => removeItem(prod.id)}>Eliminar Producto</button>
                     </div>
                 </div>
             )}
 
             <div className="divButtons">
                 <p>Resumen de la compra: ${new Intl.NumberFormat("de-DE").format(totalPrice())}</p>
-                <button className="btn btn-danger" onClick={emptyCart}>Vaciar carrito</button>
-                <button className="btn btn-dark"><Link className="nav-link" to={"/"}></Link>Continuar comprando</button>
-                <button className="btn btn-dark"><Link className="nav-link" to={"/checkout"}></Link>Finalizar compra</button>
+                <button className="btn btn-danger" onClick={emptyCart}>Vaciar Carrito</button>
+                <button className="btn btn-dark"><Link className="nav-link" to={"/"}>Continuar comprando</Link></button>
+                <button className="btn btn-dark"><Link className="nav-link" to={"/checkout"}>Finalizar compra</Link></button>
             </div>
         </div>
         }
